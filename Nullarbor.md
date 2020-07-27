@@ -48,7 +48,7 @@ Summary
 
 8. Are there examples or demo notebooks, scripts, and datasets?: http://tseemann.github.io/nullarbor/ **??**
 
-9. Is there a corresponding package available in a package manager (PyPi, CRAN, etc.)?:
+9. Is there a corresponding package available in a package manager (PyPi, CRAN, etc.)?: miniconda/conda or homebrew/linuxbrew
   - https://conda.io/miniconda.html
   - http://linuxbrew.sh/
 
