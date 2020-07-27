@@ -1,6 +1,6 @@
 # Application: TorstyVerse: Microbial genomic tools for public health and epidemiology
 
-## [`Nullarbor`]( https://github.com/tseemann/nullarbor )
+## [`MLST`]( https://github.com/tseemann/mlst )
 
 > Anders Goncalves da Silva - anders.goncalves@unimelb.edu.au Essential Open Source Software for Science (Cycle 3)
 Summary
@@ -8,62 +8,53 @@ Summary
 
 ### Software Project Details:
 
-1. Software Project name (required)
+1. Software Project name: `MLST`
 
-2. Homepage URL (required)
+2. Homepage URL: https://github.com/tseemann/mlst
 
-3. Hosting platform (required)
+3. Hosting platform: ${PLATFORM}
 
-4. Main code repository (e.g. GitHub URL) (required)
+4. Main code repository: https://github.com/tseemann/mlst
 
-5. DOI of major publication(s) describing software project (if applicable)
+5. DOI of major publication(s) describing software project (if applicable):
 
-6. Social media handles (if applicable)
+6. Social media handles (if applicable): https://twitter.com/torstenseemann **??**
 
-7. Do you or software project key personnel have commit rights to the code repositories for this software project? (required)
+7. Do you or software project key personnel have commit rights to the code repositories for this software project?: Yes
 
-8. Short description of software project (200 words maximum) (required)
+8. Short description of software project (200 words maximum):
+
+> *Scan contig files against traditional PubMLST typing schemes.*
+> `mlst` takes assembled sequence data in `..fasta` format and uses [`NCBI BLAST`](https://www.ncbi.nlm.nih.gov/books/NBK279671/) to ID alleles that match the PubMLST [Multi-Locus Sequence Typing](https://pubmlst.org/general.shtml), and lookup the appropriate numeric sequence type (ST).
 
 ---
 
 ### Software Project Metrics: Quality (required):
 
 
-1. What is the software project license?
+1. What is the software project license?: [GPL_2.0]( https://raw.githubusercontent.com/tseemann/mlst/master/LICENSE )
 
-2. What is the main programming language?
+2. What is the main programming language?: Perl 5
 
-3. Does the software project have a code of conduct?
+3. Does the software project have a code of conduct?: ${CODE_OF_CONDUCT}
+	- Link:
 
-3. Link (optional; format https://example.com):
+4. Does the software project have end-user documentation?: https://github.com/tseemann/mlst/README.md
 
-4. Does the software project have end-user documentation?
+5. Does the software project have an issue tracker?: https://github.com/tseemann/mlst/issues
 
-4. Link (optional; format https://example.com):
+6. Does the software project have a community engagement / Q&A forum (self-hosted, on Stack Exchange etc.)?: **mlst wiki??**
 
-5. Does the software project have an issue tracker?
+7. Does the software project have contribution / coding guidelines?: **??**
 
-5. Link (optional; format https://example.com):
+8. Are there examples or demo notebooks, scripts, and datasets?: **??**
 
-6. Does the software project have a community engagement / Q&A forum (self-hosted, on Stack Exchange etc.)?
+9. Is there a corresponding package available in a package manager (PyPi, CRAN, etc.)?: Conda/miniconda or HomeBrew/linuxbrew
+  - https://conda.io/miniconda.html
+  - http://linuxbrew.sh/
 
-6. Link (optional; format https://example.com):
-
-7. Does the software project have contribution / coding guidelines?
-
-7. Link (optional; format https://example.com):
-
-8. Are there examples or demo notebooks, scripts, and datasets?
-
-8. Link (optional; format https://example.com):
-
-9. Is there a corresponding package available in a package manager (PyPi, CRAN, etc.)?
-
-9. Link (optional; format https://example.com):
-
-10. Does the software project support continuous integration for testing?
-
-10. Comment (optional):
+10. Does the software project support continuous integration for testing?: **??**
+  - Comment (optional):
 
 ---
 
@@ -88,6 +79,11 @@ Complete the following for the open source software project listed above. Provid
 | Estimate the potential number of unique users who could adopt this project in the relevant field/discipline. Use as guidance the number of users of comparable projects, the number of papers published in the domain to which the project is applicable, number of labs able to adopt the project, etc. |  |  |
 
 3. List of upstream, downstream, or related software projects that the team is contributing to or receiving contributions from:
+
+ - [`any2fasta`](https://github.com/tseemann/any2fasta)
+ - dependencies: @torsten likely catches bugs for some of these cats...?
+  - [`NCBI BLAST`](https://www.ncbi.nlm.nih.gov/books/NBK279671/)
+
 
 4. Additional metrics from project code repositories and package managers:
 
