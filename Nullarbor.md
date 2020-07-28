@@ -12,7 +12,7 @@ Summary
 
 2. Homepage URL: https://github.com/tseemann/nullarbor
 
-3. Hosting platform: ${PLATFORM}
+3. Hosting platform: GitHub
 
 4. Main code repository: https://github.com/tseemann/nullarbor
 
