@@ -1,6 +1,6 @@
 # Application: TorstyVerse: Microbial genomic tools for public health and epidemiology
 
-## [`Nullarbor`]( https://github.com/tseemann/nullarbor )
+## [`shovill`]( https://github.com/tseemann/shovill )
 
 > Anders Goncalves da Silva - anders.goncalves@unimelb.edu.au Essential Open Source Software for Science (Cycle 3)
 Summary
@@ -8,62 +8,57 @@ Summary
 
 ### Software Project Details:
 
-1. Software Project name (required)
+1. Software Project name: `shovill`
 
-2. Homepage URL (required)
+2. Homepage URL: https://github.com/tseemann/shovill
 
-3. Hosting platform (required)
+3. Hosting platform: GitHub
 
-4. Main code repository (e.g. GitHub URL) (required)
+4. Main code repository: https://github.com/tseemann/shovill
 
-5. DOI of major publication(s) describing software project (if applicable)
+5. DOI of major publication(s) describing software project:
 
-6. Social media handles (if applicable)
+6. Social media handles: @torstenseemann
 
-7. Do you or software project key personnel have commit rights to the code repositories for this software project? (required)
+7. Do you or software project key personnel have commit rights to the code repositories for this software project?: Yes
 
-8. Short description of software project (200 words maximum) (required)
+8. Short description of software project (200 words maximum):
+
+> **Assemble bacterial isolate genomes from Illumina paired-end reads**
+>
+> The SPAdes genome assembler has become the de facto standard de novo genome assembler for Illumina whole genome sequencing data of bacteria and other small microbes. SPAdes was a major improvement over previous assemblers like Velvet, but some of its components can be slow and it traditionally did not handle overlapping paired-end reads well.
+>
+> Shovill is a pipeline which uses SPAdes at its core, but alters the steps before and after the primary assembly step to get similar results in less time. Shovill also supports other assemblers like SKESA, Velvet and Megahit, so you can take advantage of the pre- and post-processing the Shovill provides with those too.
+>
+> Shovill is for isolate data only, primarily small haploid organisms. It will NOT work on metagenomes or larger genomes. Please use Megahit directly instead.
 
 ---
 
 ### Software Project Metrics: Quality (required):
 
 
-1. What is the software project license?
+1. What is the software project license?: [GPL_3.0]( https://raw.githubusercontent.com/tseemann/shovill/master/LICENSE )
 
-2. What is the main programming language?
+2. What is the main programming language?: Perl 5
 
-3. Does the software project have a code of conduct?
+3. Does the software project have a code of conduct?: ${CODE_OF_CONDUCT}
 
-3. Link (optional; format https://example.com):
+4. Does the software project have end-user documentation?: https://github.com/tseemann/shovill
 
-4. Does the software project have end-user documentation?
+5. Does the software project have an issue tracker?: https://github.com/tseemann/shovill/issues
 
-4. Link (optional; format https://example.com):
-
-5. Does the software project have an issue tracker?
-
-5. Link (optional; format https://example.com):
-
-6. Does the software project have a community engagement / Q&A forum (self-hosted, on Stack Exchange etc.)?
-
-6. Link (optional; format https://example.com):
+6. Does the software project have a community engagement / Q&A forum (self-hosted, on Stack Exchange etc.)?:
 
 7. Does the software project have contribution / coding guidelines?
 
-7. Link (optional; format https://example.com):
-
 8. Are there examples or demo notebooks, scripts, and datasets?
 
-8. Link (optional; format https://example.com):
+9. Is there a corresponding package available in a package manager (PyPi, CRAN, etc.)?: miniconda/conda or homebrew/linuxbrew
+  - https://conda.io/miniconda.html
+  - http://linuxbrew.sh/
 
-9. Is there a corresponding package available in a package manager (PyPi, CRAN, etc.)?
+10. Does the software project support continuous integration for testing?: [travis-ci](https://travis-ci.org/tseemann/shovill)
 
-9. Link (optional; format https://example.com):
-
-10. Does the software project support continuous integration for testing?
-
-10. Comment (optional):
 
 ---
 
@@ -88,6 +83,21 @@ Complete the following for the open source software project listed above. Provid
 | Estimate the potential number of unique users who could adopt this project in the relevant field/discipline. Use as guidance the number of users of comparable projects, the number of papers published in the domain to which the project is applicable, number of labs able to adopt the project, etc. |  |  |
 
 3. List of upstream, downstream, or related software projects that the team is contributing to or receiving contributions from:
+
+- dependencies: @torsten likely catches bugs for some of these cats...?
+  - [`SKESA`](https://github.com/ncbi/SKESA)
+  - [`SPAdes`](http://cab.spbu.ru/software/spades/)
+  - [`Meghahit`](https://github.com/voutcn/megahit)
+  - [`Velvet`](https://github.com/dzerbino/velvet)
+  - [`lighter`](https://github.com/mourisl/Lighter/releases)
+  - [`FLASh`](https://ccb.jhu.edu/software/FLASH/)
+  - [`BWA MEM`](https://sourceforge.net/projects/bio-bwa/files/)
+  - [`SAMtools`](http://www.htslib.org/)
+  - [`KMC`](http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=kmc&subpage=about)
+  - [`seqtk`](https://github.com/lh3/seqtk/releases)
+  - [`Pilon`](https://github.com/broadinstitute/pilon/releases/)
+  - [`Trimmomatic`](https://github.com/timflutre/trimmomatic)
+  - [`samclip`](https://github.com/tseemann/samclip/releases)
 
 4. Additional metrics from project code repositories and package managers:
 
